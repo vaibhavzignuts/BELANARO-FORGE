@@ -1,0 +1,135 @@
+{
+    "header": {
+      "getQuote": "Get a Quote"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "bearingRings": "Bearing Rings",
+      "autoComponents": "Auto Components",
+      "flangesShafts": "Flanges & Shafts",
+      "customForging": "Custom Forging",
+      "manufacturing": "Manufacturing",
+      "quality": "Quality",
+      "dealer": "Become a Dealer",
+      "contact": "Contact"
+    },
+    "hero": {
+      "headline": "Precision Forging. Global Strength.",
+      "subheadline": "Delivering high-performance bearing rings, auto parts, and precision-forged components from India to the world.",
+      "cta1": "Explore Products",
+      "cta2": "Contact Us"
+    },
+    "highlights": {
+      "title": "Why Choose BELANARO FORGE",
+      "inHouse": "100% In-House Forging & Machining",
+      "quality": "ISO / IATF Ready Manufacturing",
+      "pricing": "Competitive Pricing & Consistent Quality",
+      "delivery": "On-Time Worldwide Delivery",
+      "custom": "Custom Engineering Solutions"
+    },
+    "about": {
+      "title": "Engineering Excellence Forged in Trust",
+      "description": "BELANARO FORGE LLP is a global manufacturer and exporter of bearing rings, automotive components, precision-forged parts, and customized closed & open die forgings.",
+      "vision": "Our Vision",
+      "visionText": "To be a trusted global name in precision forging and engineering excellence.",
+      "mission": "Our Mission",
+      "missionText": "To deliver world-class forged components that meet global standards and build sustainable, trust-based partnerships across continents."
+    },
+    "products": {
+      "title": "Forged Range of Excellence",
+      "subtitle": "We manufacture and export a complete range of precision-forged components for automotive, bearing, and industrial applications.",
+      "bearingRings": "Bearing Rings (Inner & Outer)",
+      "bearingDesc": "Precision-forged and machined rings designed for high-speed, high-performance bearings.",
+      "autoComponents": "Automotive Components",
+      "autoDesc": "Forged components for steering, suspension, transmission, and drivetrain applications.",
+      "flanges": "Flanges & Shafts",
+      "flangesDesc": "Heavy-duty forged flanges and shafts offering excellent mechanical strength and durability.",
+      "precision": "Precision Forged Parts",
+      "precisionDesc": "Custom-engineered parts designed to meet specific industrial requirements.",
+      "custom": "Customized Closed & Open Die Forgings",
+      "customDesc": "Bespoke forging solutions developed according to client drawings and material specifications.",
+      "downloadCatalog": "Download Product Catalog"
+    },
+    "manufacturing": {
+      "title": "Where Technology Meets Strength",
+      "subtitle": "Our state-of-the-art manufacturing unit in Rajkot, Gujarat, combines modern machinery, automation, and skilled manpower.",
+      "facilities": "Key Facilities",
+      "hammers": "Forging Hammers & Hydraulic Presses",
+      "heatTreatment": "In-House Heat Treatment Units",
+      "cnc": "CNC Machining Centers & Tool Room",
+      "testing": "Advanced Measuring Instruments",
+      "qa": "Quality Assurance & Testing Laboratory",
+      "advantages": "Manufacturing Advantages",
+      "inHouseProcess": "Complete In-House Forging to Machining Process",
+      "monitoring": "Real-Time Production Monitoring",
+      "workforce": "Skilled Engineering Workforce",
+      "capacity": "Flexible Capacity for Bulk & Custom Orders"
+    },
+    "quality": {
+      "title": "Quality That Performs Under Pressure",
+      "subtitle": "BELANARO FORGE LLP maintains zero-defect quality through strict control at every stage of production.",
+      "process": "Our Quality Process",
+      "inspection": "Raw Material Inspection",
+      "monitoring": "Forging Process Monitoring",
+      "heatControl": "Heat Treatment Control",
+      "testing": "Dimensional & Metallurgical Testing",
+      "finalQA": "Final Quality Assurance Before Dispatch",
+      "promise": "Zero Defects. Zero Delays. 100% Satisfaction."
+    },
+    "global": {
+      "title": "Delivering Quality Beyond Borders",
+      "subtitle": "With exports spanning across Europe, the USA, the Middle East, and Asia, BELANARO FORGE LLP has established itself as a reliable name in the international forging industry.",
+      "quote": "Our strength lies not only in the metal we forge — but in the relationships we build."
+    },
+    "dealer": {
+      "title": "Partner with BELANARO FORGE – Grow with Us",
+      "subtitle": "Join our global network of distributors and importers.",
+      "benefits": "Dealer Benefits",
+      "territory": "Exclusive Territory Rights",
+      "support": "Marketing & Technical Assistance",
+      "pricing": "Competitive Pricing & Incentives",
+      "service": "Fast Delivery & After-Sales Service",
+      "products": "Early Access to New Products",
+      "apply": "Apply for Dealership"
+    },
+    "contact": {
+      "title": "Let's Build a Strong Partnership",
+      "subtitle": "We'd love to hear from you! Reach out for inquiries, collaboration, or dealership opportunities.",
+      "name": "Name",
+      "company": "Company Name",
+      "country": "Country",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit Inquiry",
+      "phone": "Phone",
+      "address": "Address",
+      "location": "Rajkot, Gujarat, India"
+    },
+    "footer": {
+      "tagline": "Precision Forging. Global Strength.",
+      "description": "Leading manufacturer and exporter of bearing rings, auto parts, and precision-forged components from India.",
+      "quickLinks": "Quick Links",
+      "products": "Products",
+      "company": "Company",
+      "followUs": "Follow Us",
+      "newsletter": "Subscribe to Newsletter",
+      "newsletterText": "Get updates on new products and industry insights",
+      "subscribe": "Subscribe",
+      "copyright": "© 2024 BELANARO FORGE LLP. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "readMore": "Read More",
+      "viewAll": "View All",
+      "close": "Close",
+      "loading": "Loading...",
+      "error": "Something went wrong",
+      "success": "Success",
+      "send": "Send",
+      "download": "Download"
+    }
+  }

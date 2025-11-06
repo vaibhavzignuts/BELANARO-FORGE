@@ -1,0 +1,137 @@
+{
+  "header": {
+    "getQuote": "Obtenir un Devis"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos de Nous",
+    "products": "Produits",
+    "bearingRings": "Bagues de Roulement",
+    "autoComponents": "Composants Automobiles",
+    "flangesShafts": "Brides et Arbres",
+    "customForging": "Forgeage Personnalisé",
+    "manufacturing": "Fabrication",
+    "quality": "Qualité",
+    "dealer": "Devenir Revendeur",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Forgeage de Précision. Force Mondiale.",
+    "subheadline": "Livraison de bagues de roulement haute performance, pièces automobiles et composants forgés de précision depuis l'Inde vers le monde.",
+    "cta1": "Explorer les Produits",
+    "cta2": "Nous Contacter"
+  },
+  "highlights": {
+    "title": "Pourquoi Choisir BELANARO FORGE",
+    "inHouse": "100% Forgeage et Usinage Interne",
+    "quality": "Fabrication Prête pour ISO / IATF",
+    "pricing": "Prix Compétitifs et Qualité Constante",
+    "delivery": "Livraison Punctuelle Mondiale",
+    "custom": "Solutions d'Ingénierie Personnalisées"
+  },
+  "about": {
+    "title": "Excellence en Ingénierie Forgée dans la Confiance",
+    "description": "BELANARO FORGE LLP est un fabricant et exportateur mondial de bagues de roulement, composants automobiles, pièces forgées de précision et forgeages personnalisés à matrice fermée et ouverte.",
+    "vision": "Notre Vision",
+    "visionText": "Être un nom mondial de confiance dans le forgeage de précision et l'excellence en ingénierie.",
+    "mission": "Notre Mission",
+    "missionText": "Livrer des composants forgés de classe mondiale qui répondent aux normes mondiales et construire des partenariats durables basés sur la confiance à travers les continents."
+  },
+  "products": {
+    "title": "Gamme Forgée d'Excellence",
+    "subtitle": "Nous fabriquons et exportons une gamme complète de composants forgés de précision pour applications automobiles, de roulement et industrielles.",
+    "bearingRings": "Bagues de Roulement (Intérieure et Extérieure)",
+    "bearingDesc": "Bagues forgées et usinées de précision conçues pour les roulements haute vitesse et haute performance.",
+    "autoComponents": "Composants Automobiles",
+    "autoDesc": "Composants forgés pour applications de direction, suspension, transmission et train de transmission.",
+    "flanges": "Brides et Arbres",
+    "flangesDesc": "Brides et arbres forgés robustes offrant une excellente résistance mécanique et durabilité.",
+    "precision": "Pièces Forgées de Précision",
+    "precisionDesc": "Pièces conçues sur mesure pour répondre aux exigences industrielles spécifiques.",
+    "custom": "Forgeages Personnalisés à Matrice Fermée et Ouverte",
+    "customDesc": "Solutions de forgeage sur mesure développées selon les dessins et spécifications de matériaux du client.",
+    "downloadCatalog": "Télécharger le Catalogue Produit"
+  },
+  "manufacturing": {
+    "title": "Où la Technologie Rencontre la Force",
+    "subtitle": "Notre unité de fabrication de pointe à Rajkot, Gujarat, combine machines modernes, automatisation et main-d'œuvre qualifiée.",
+    "facilities": "Installations Clés",
+    "hammers": "Marteaux de Forgeage et Presses Hydrauliques",
+    "heatTreatment": "Unités de Traitement Thermique Internes",
+    "cnc": "Centres d'Usinage CNC et Atelier d'Outillage",
+    "testing": "Instruments de Mesure Avancés",
+    "qa": "Laboratoire d'Assurance Qualité et de Test",
+    "advantages": "Avantages de Fabrication",
+    "inHouseProcess": "Processus Complet Interne de Forgeage à Usinage",
+    "monitoring": "Surveillance de Production en Temps Réel",
+    "workforce": "Main-d'Œuvre d'Ingénierie Qualifiée",
+    "capacity": "Capacité Flexible pour Commandes en Vrac et Personnalisées"
+  },
+  "quality": {
+    "title": "Qualité qui Performe Sous Pression",
+    "subtitle": "BELANARO FORGE LLP maintient une qualité zéro défaut grâce à un contrôle strict à chaque étape de production.",
+    "process": "Notre Processus Qualité",
+    "inspection": "Inspection des Matières Premières",
+    "monitoring": "Surveillance du Processus de Forgeage",
+    "heatControl": "Contrôle du Traitement Thermique",
+    "testing": "Tests Dimensionnels et Métallurgiques",
+    "finalQA": "Assurance Qualité Finale Avant Expédition",
+    "promise": "Zéro Défaut. Zéro Retard. 100% Satisfaction."
+  },
+  "global": {
+    "title": "Livrer la Qualité au-Delà des Frontières",
+    "subtitle": "Avec des exportations s'étendant à travers l'Europe, les États-Unis, le Moyen-Orient et l'Asie, BELANARO FORGE LLP s'est établi comme un nom fiable dans l'industrie internationale du forgeage.",
+    "quote": "Notre force réside non seulement dans le métal que nous forgeons, mais dans les relations que nous construisons."
+  },
+  "dealer": {
+    "title": "Partenariat avec BELANARO FORGE – Grandissez avec Nous",
+    "subtitle": "Rejoignez notre réseau mondial de distributeurs et importateurs.",
+    "benefits": "Avantages du Revendeur",
+    "territory": "Droits de Territoire Exclusif",
+    "support": "Assistance Marketing et Technique",
+    "pricing": "Prix Compétitifs et Incitations",
+    "service": "Livraison Rapide et Service Après-Vente",
+    "products": "Accès Anticipé aux Nouveaux Produits",
+    "apply": "Postuler pour la Revendeur"
+  },
+  "contact": {
+    "title": "Construisons un Partenariat Fort",
+    "subtitle": "Nous aimerions avoir de vos nouvelles ! Contactez-nous pour des demandes, collaborations ou opportunités de revendeur.",
+    "name": "Nom",
+    "company": "Nom de l'Entreprise",
+    "country": "Pays",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Soumettre une Demande",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "location": "Rajkot, Gujarat, Inde"
+  },
+  "footer": {
+    "tagline": "Forgeage de Précision. Force Mondiale.",
+    "description": "Fabricant et exportateur leader de bagues de roulement, pièces automobiles et composants forgés de précision depuis l'Inde.",
+    "quickLinks": "Liens Rapides",
+    "products": "Produits",
+    "company": "Entreprise",
+    "followUs": "Suivez-Nous",
+    "newsletter": "S'abonner à la Newsletter",
+    "newsletterText": "Recevez des mises à jour sur les nouveaux produits et les informations de l'industrie",
+    "subscribe": "S'abonner",
+    "copyright": "© 2024 BELANARO FORGE LLP. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Termes et Conditions"
+  },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tout",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "success": "Succès",
+    "send": "Envoyer",
+    "download": "Télécharger"
+  }
+}
+
+

@@ -1,0 +1,137 @@
+{
+  "header": {
+    "getQuote": "Obtener Cotización"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de Nosotros",
+    "products": "Productos",
+    "bearingRings": "Anillos de Rodamientos",
+    "autoComponents": "Componentes Automotrices",
+    "flangesShafts": "Bridas y Ejes",
+    "customForging": "Forjado Personalizado",
+    "manufacturing": "Manufactura",
+    "quality": "Calidad",
+    "dealer": "Convertirse en Distribuidor",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "Forjado de Precisión. Fuerza Global.",
+    "subheadline": "Entregando anillos de rodamientos de alto rendimiento, piezas automotrices y componentes forjados de precisión desde India al mundo.",
+    "cta1": "Explorar Productos",
+    "cta2": "Contáctenos"
+  },
+  "highlights": {
+    "title": "Por Qué Elegir BELANARO FORGE",
+    "inHouse": "100% Forjado y Mecanizado Interno",
+    "quality": "Manufactura Lista para ISO / IATF",
+    "pricing": "Precios Competitivos y Calidad Consistente",
+    "delivery": "Entrega Puntual en Todo el Mundo",
+    "custom": "Soluciones de Ingeniería Personalizadas"
+  },
+  "about": {
+    "title": "Excelencia en Ingeniería Forjada en Confianza",
+    "description": "BELANARO FORGE LLP es un fabricante y exportador global de anillos de rodamientos, componentes automotrices, piezas forjadas de precisión y forjados personalizados de matriz cerrada y abierta.",
+    "vision": "Nuestra Visión",
+    "visionText": "Ser un nombre confiable global en forjado de precisión y excelencia en ingeniería.",
+    "mission": "Nuestra Misión",
+    "missionText": "Entregar componentes forjados de clase mundial que cumplan con los estándares globales y construir asociaciones sostenibles basadas en la confianza en todos los continentes."
+  },
+  "products": {
+    "title": "Gama Forjada de Excelencia",
+    "subtitle": "Fabricamos y exportamos una gama completa de componentes forjados de precisión para aplicaciones automotrices, de rodamientos e industriales.",
+    "bearingRings": "Anillos de Rodamientos (Interior y Exterior)",
+    "bearingDesc": "Anillos forjados y mecanizados de precisión diseñados para rodamientos de alta velocidad y alto rendimiento.",
+    "autoComponents": "Componentes Automotrices",
+    "autoDesc": "Componentes forjados para aplicaciones de dirección, suspensión, transmisión y tren de potencia.",
+    "flanges": "Bridas y Ejes",
+    "flangesDesc": "Bridas y ejes forjados de servicio pesado que ofrecen excelente resistencia mecánica y durabilidad.",
+    "precision": "Piezas Forjadas de Precisión",
+    "precisionDesc": "Piezas diseñadas a medida para cumplir con requisitos industriales específicos.",
+    "custom": "Forjados Personalizados de Matriz Cerrada y Abierta",
+    "customDesc": "Soluciones de forjado personalizadas desarrolladas según los dibujos y especificaciones de material del cliente.",
+    "downloadCatalog": "Descargar Catálogo de Productos"
+  },
+  "manufacturing": {
+    "title": "Donde la Tecnología se Encuentra con la Fuerza",
+    "subtitle": "Nuestra unidad de manufactura de última generación en Rajkot, Gujarat, combina maquinaria moderna, automatización y mano de obra calificada.",
+    "facilities": "Instalaciones Clave",
+    "hammers": "Martillos de Forjado y Prensas Hidráulicas",
+    "heatTreatment": "Unidades de Tratamiento Térmico Internas",
+    "cnc": "Centros de Mecanizado CNC y Taller de Herramientas",
+    "testing": "Instrumentos de Medición Avanzados",
+    "qa": "Laboratorio de Aseguramiento de Calidad y Pruebas",
+    "advantages": "Ventajas de Manufactura",
+    "inHouseProcess": "Proceso Completo Interno de Forjado a Mecanizado",
+    "monitoring": "Monitoreo de Producción en Tiempo Real",
+    "workforce": "Fuerza de Trabajo de Ingeniería Calificada",
+    "capacity": "Capacidad Flexible para Pedidos a Granel y Personalizados"
+  },
+  "quality": {
+    "title": "Calidad que Rinde Bajo Presión",
+    "subtitle": "BELANARO FORGE LLP mantiene calidad cero defectos a través de un control estricto en cada etapa de producción.",
+    "process": "Nuestro Proceso de Calidad",
+    "inspection": "Inspección de Materia Prima",
+    "monitoring": "Monitoreo del Proceso de Forjado",
+    "heatControl": "Control de Tratamiento Térmico",
+    "testing": "Pruebas Dimensionales y Metalúrgicas",
+    "finalQA": "Aseguramiento de Calidad Final Antes del Envío",
+    "promise": "Cero Defectos. Cero Retrasos. 100% Satisfacción."
+  },
+  "global": {
+    "title": "Entregando Calidad Más Allá de las Fronteras",
+    "subtitle": "Con exportaciones que abarcan Europa, Estados Unidos, Medio Oriente y Asia, BELANARO FORGE LLP se ha establecido como un nombre confiable en la industria internacional de forjado.",
+    "quote": "Nuestra fuerza radica no solo en el metal que forjamos, sino en las relaciones que construimos."
+  },
+  "dealer": {
+    "title": "Asóciate con BELANARO FORGE – Crece con Nosotros",
+    "subtitle": "Únete a nuestra red global de distribuidores e importadores.",
+    "benefits": "Beneficios del Distribuidor",
+    "territory": "Derechos de Territorio Exclusivo",
+    "support": "Asistencia de Marketing y Técnica",
+    "pricing": "Precios Competitivos e Incentivos",
+    "service": "Entrega Rápida y Servicio Postventa",
+    "products": "Acceso Anticipado a Nuevos Productos",
+    "apply": "Solicitar Distribución"
+  },
+  "contact": {
+    "title": "Construyamos una Asociación Fuerte",
+    "subtitle": "¡Nos encantaría saber de ti! Comunícate para consultas, colaboración u oportunidades de distribución.",
+    "name": "Nombre",
+    "company": "Nombre de la Empresa",
+    "country": "País",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar Consulta",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "location": "Rajkot, Gujarat, India"
+  },
+  "footer": {
+    "tagline": "Forjado de Precisión. Fuerza Global.",
+    "description": "Fabricante y exportador líder de anillos de rodamientos, piezas automotrices y componentes forjados de precisión desde India.",
+    "quickLinks": "Enlaces Rápidos",
+    "products": "Productos",
+    "company": "Empresa",
+    "followUs": "Síguenos",
+    "newsletter": "Suscribirse al Boletín",
+    "newsletterText": "Recibe actualizaciones sobre nuevos productos e información de la industria",
+    "subscribe": "Suscribirse",
+    "copyright": "© 2024 BELANARO FORGE LLP. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones"
+  },
+  "common": {
+    "learnMore": "Aprender Más",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todo",
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "success": "Éxito",
+    "send": "Enviar",
+    "download": "Descargar"
+  }
+}
+
+
