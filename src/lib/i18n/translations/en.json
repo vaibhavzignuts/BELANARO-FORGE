@@ -12,7 +12,8 @@
       "customForging": "Custom Forging",
       "manufacturing": "Manufacturing",
       "quality": "Quality",
-      "dealer": "Become a Dealer",
+    "workshop": "Workshop",
+    "dealer": "Become a Dealer",
       "contact": "Contact"
     },
     "hero": {

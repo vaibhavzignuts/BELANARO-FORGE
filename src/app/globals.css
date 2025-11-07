@@ -34,6 +34,84 @@
   }
 }
 
+/* Light Theme Overrides */
+[data-theme='light'] body {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+[data-theme='light'] .bg-steel-950 {
+  background-color: #ffffff !important;
+}
+[data-theme='light'] .bg-steel-900 {
+  background-color: #f8fafc !important;
+}
+[data-theme='light'] .bg-steel-800 {
+  background-color: #f1f5f9 !important;
+}
+/* Arbitrary color classes need escaped selectors */
+[data-theme='light'] .bg-\[\#020617\] {
+  background-color: #ffffff !important;
+}
+[data-theme='light'] .bg-\[\#0f172a\] {
+  background-color: #ffffff !important;
+}
+
+[data-theme='light'] .border-steel-800 {
+  border-color: #e2e8f0 !important;
+}
+[data-theme='light'] .border-steel-900 {
+  border-color: #e2e8f0 !important;
+}
+/* Arbitrary border */
+[data-theme='light'] .border-\[\#1e293b\] {
+  border-color: #e2e8f0 !important;
+}
+
+[data-theme='light'] .text-steel-400 {
+  color: #334155 !important;
+}
+[data-theme='light'] .text-steel-300 {
+  color: #475569 !important;
+}
+[data-theme='light'] .text-steel-500 {
+  color: #334155 !important;
+}
+[data-theme='light'] .text-white {
+  color: #0f172a !important;
+}
+/* Arbitrary text */
+[data-theme='light'] .text-\[\#cbd5e1\] {
+  color: #334155 !important;
+}
+[data-theme='light'] .text-\[\#94a3b8\] {
+  color: #475569 !important;
+}
+
+/* Opacity variants must escape slash */
+[data-theme='light'] .bg-\[\#0f172a\]\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[data-theme='light'] .bg-steel-950\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[data-theme='light'] .bg-steel-900\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+[data-theme='light'] .bg-steel-900\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Gradient background overrides for sections using from-[#020617] to-[#0f172a] */
+[data-theme='light'] .from-\[\#020617\] {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+[data-theme='light'] .to-\[\#0f172a\] {
+  --tw-gradient-to: #f8fafc var(--tw-gradient-to-position);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

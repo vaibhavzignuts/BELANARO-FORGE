@@ -12,7 +12,8 @@
     "customForging": "Forgeage Personnalisé",
     "manufacturing": "Fabrication",
     "quality": "Qualité",
-    "dealer": "Devenir Revendeur",
+  "workshop": "Atelier",
+  "dealer": "Devenir Revendeur",
     "contact": "Contact"
   },
   "hero": {

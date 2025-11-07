@@ -23,15 +23,15 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
       label: t('nav.products'),
       href: '/products',
       dropdown: [
-        { label: t('nav.bearingRings'), href: '/products#bearing-rings' },
-        { label: t('nav.autoComponents'), href: '/products#auto-components' },
-        { label: t('nav.flangesShafts'), href: '/products#flanges-shafts' },
-        { label: t('nav.customForging'), href: '/products#custom-forging' },
+        { label: t('nav.bearingRings'), href: '/products/bearing-rings' },
+        { label: t('nav.autoComponents'), href: '/products/auto-components' },
+        { label: t('nav.flangesShafts'), href: '/products/flanges-shafts' },
+        { label: t('nav.customForging'), href: '/products/precision-forged-parts' },
       ],
     },
     { label: t('nav.manufacturing'), href: '/manufacturing' },
     { label: t('nav.quality'), href: '/quality' },
-    { label: t('nav.dealer'), href: '/dealer' },
+    { label: t('nav.workshop'), href: '/workshop' },
     { label: t('nav.contact'), href: '/contact' },
   ];
 
@@ -58,22 +58,22 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
       {/* Menu Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-[85%] max-w-sm bg-steel-950 z-50 transform transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full w-[85%] max-w-sm dark:bg-steel-950 bg-white z-50 transform transition-transform duration-300 ease-out lg:hidden ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-steel-800">
+          <div className="flex items-center justify-between p-6 border-b dark:border-steel-800 border-steel-200">
             <div>
-              <div className="font-heading font-bold text-xl text-white">
+              <div className="font-heading font-bold text-xl dark:text-white text-steel-900">
                 BELANARO FORGE
               </div>
-              <div className="text-xs text-steel-400">PRECISION FORGING</div>
+              <div className="text-xs dark:text-steel-400 text-steel-600">PRECISION FORGING</div>
             </div>
             <button
               onClick={onClose}
-              className="p-2 text-steel-400 hover:text-white transition-colors"
+              className="p-2 dark:text-steel-400 text-steel-600 hover:text-steel-900 transition-colors"
               aria-label="Close menu"
             >
               <X size={24} />
@@ -91,8 +91,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                         onClick={() => toggleExpand(item.label)}
                         className={`w-full flex items-center justify-between px-4 py-3 rounded-lg font-medium transition-all ${
                           isActive(item.href)
-                            ? 'text-forge-400 bg-steel-800'
-                            : 'text-steel-300 hover:text-white hover:bg-steel-800'
+                            ? 'dark:text-forge-400 dark:bg-steel-800 text-forge-600 bg-steel-100'
+                            : 'dark:text-steel-300 dark:hover:text-white dark:hover:bg-steel-800 text-steel-700 hover:text-steel-900 hover:bg-steel-100'
                         }`}
                       >
                         <span>{item.label}</span>
@@ -112,7 +112,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                               <Link
                                 href={dropItem.href}
                                 onClick={onClose}
-                                className="block px-4 py-2 text-steel-400 hover:text-white hover:bg-steel-800 rounded-lg transition-colors"
+                                className="block px-4 py-2 dark:text-steel-400 text-steel-700 dark:hover:text-white hover:text-steel-900 dark:hover:bg-steel-800 hover:bg-steel-100 rounded-lg transition-colors"
                               >
                                 {dropItem.label}
                               </Link>
@@ -127,8 +127,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                       onClick={onClose}
                       className={`block px-4 py-3 rounded-lg font-medium transition-all ${
                         isActive(item.href)
-                          ? 'text-forge-400 bg-steel-800'
-                          : 'text-steel-300 hover:text-white hover:bg-steel-800'
+                          ? 'dark:text-forge-400 dark:bg-steel-800 text-forge-600 bg-steel-100'
+                          : 'dark:text-steel-300 dark:hover:text-white dark:hover:bg-steel-800 text-steel-700 hover:text-steel-900 hover:bg-steel-100'
                       }`}
                     >
                       {item.label}
@@ -140,7 +140,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           </nav>
 
           {/* CTA Button */}
-          <div className="p-6 border-t border-steel-800">
+          <div className="p-6 border-t dark:border-steel-800 border-steel-200">
             <Link
               href="/contact"
               onClick={onClose}

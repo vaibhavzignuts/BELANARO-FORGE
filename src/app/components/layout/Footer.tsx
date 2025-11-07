@@ -31,7 +31,7 @@ const Footer = () => {
     company: [
       { label: 'Quality', href: '/quality' },
       { label: 'Sustainability', href: '/sustainability' },
-      { label: 'Become a Dealer', href: '/dealer' },
+      { label: 'Workshop', href: '/workshop' },
       { label: 'Contact', href: '/contact' },
     ],
   };

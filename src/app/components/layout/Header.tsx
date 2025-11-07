@@ -7,6 +7,7 @@ import { useScrollPosition } from '@/hooks/useScrollPosition';
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
 import LanguageSwitcher from '../shared/LanguageSwitcher';
+import ThemeSwitcher from '../shared/ThemeSwitcher';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 const Header = () => {
@@ -33,7 +34,7 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-steel-900/95 backdrop-blur-md shadow-lg border-b border-steel-800'
+            ? 'dark:bg-steel-900/95 bg-white/90 backdrop-blur-md shadow-lg border-b dark:border-steel-800 border-steel-200'
             : 'bg-transparent'
         }`}
       >
@@ -50,10 +51,10 @@ const Header = () => {
                 </div>
               </div>
               <div className="hidden sm:block">
-                <div className="font-heading font-bold text-xl text-white leading-none">
+                <div className="font-heading font-bold text-xl dark:text-white text-steel-900 leading-none">
                   BELANARO FORGE
                 </div>
-                <div className="text-xs text-steel-400 tracking-wider">
+                <div className="text-xs dark:text-steel-400 text-steel-600 tracking-wider">
                   PRECISION FORGING
                 </div>
               </div>
@@ -66,8 +67,9 @@ const Header = () => {
 
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
-              {/* Language Switcher */}
+              {/* Language & Theme */}
               <LanguageSwitcher />
+              <ThemeSwitcher />
 
               {/* CTA Button - Hidden on mobile */}
               <Link
@@ -80,7 +82,7 @@ const Header = () => {
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="lg:hidden p-2 text-white hover:text-forge-400 transition-colors"
+                className="lg:hidden p-2 dark:text-white text-steel-800 hover:text-forge-400 transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X size={28} /> : <Menu size={28} />}

@@ -12,7 +12,8 @@
     "customForging": "Forjado Personalizado",
     "manufacturing": "Manufactura",
     "quality": "Calidad",
-    "dealer": "Convertirse en Distribuidor",
+  "workshop": "Taller",
+  "dealer": "Convertirse en Distribuidor",
     "contact": "Contacto"
   },
   "hero": {

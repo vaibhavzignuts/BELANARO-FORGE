@@ -31,7 +31,7 @@ const Hero = () => {
 
       gsap.from(buttonsRef.current?.children || [], {
         y: 30,
-        opacity: 0,
+        // opacity: 0,
         duration: 0.8,
         delay: 0.5,
         stagger: 0.15,
@@ -136,6 +136,32 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
+
+          {/* Stats */}
+          <div
+            ref={statsRef}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto"
+          >
+            {[
+              { icon: Shield, value: '100%', label: 'Quality Assured' },
+              { icon: Zap, value: '50+', label: 'Global Clients' },
+              { icon: Sparkles, value: '10K+', label: 'Products Monthly' },
+              { icon: Shield, value: 'ISO', label: 'Certified' },
+            ].map((stat, index) => (
+              <div key={index} className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#f97316]/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
+                <div className="relative bg-[#0f172a]/50 backdrop-blur-sm border border-[#1e293b] rounded-2xl p-4 md:p-6 hover:border-[#f97316]/50 transition-all duration-300 hover:-translate-y-2">
+                  <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-[#fb923c] mb-2 md:mb-3 mx-auto" />
+                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs md:text-sm text-[#94a3b8]">
+                    {stat.label}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
           <div
             ref={buttonsRef}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
@@ -166,32 +192,6 @@ const Hero = () => {
                 />
               </span>
             </Link>
-          </div>
-
-          {/* Stats */}
-          <div
-            ref={statsRef}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto"
-          >
-            {[
-              { icon: Shield, value: '100%', label: 'Quality Assured' },
-              { icon: Zap, value: '50+', label: 'Global Clients' },
-              { icon: Sparkles, value: '10K+', label: 'Products Monthly' },
-              { icon: Shield, value: 'ISO', label: 'Certified' },
-            ].map((stat, index) => (
-              <div key={index} className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#f97316]/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
-                <div className="relative bg-[#0f172a]/50 backdrop-blur-sm border border-[#1e293b] rounded-2xl p-4 md:p-6 hover:border-[#f97316]/50 transition-all duration-300 hover:-translate-y-2">
-                  <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-[#fb923c] mb-2 md:mb-3 mx-auto" />
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs md:text-sm text-[#94a3b8]">
-                    {stat.label}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

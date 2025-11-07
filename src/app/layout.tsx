@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import WhatsAppFloat from './components/shared/WhatsAppFloat';
 import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
 import Header from './components/layout/Header';
+import { ThemeProvider } from '@/lib/theme/ThemeProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -107,12 +108,14 @@ export default function RootLayout({
         <meta name="theme-color" content="#f97316" />
       </head>
       <body className="antialiased">
-        <LanguageProvider>
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-          <WhatsAppFloat phoneNumber="+918735030126" />
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <WhatsAppFloat phoneNumber="+918735030126" />
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
