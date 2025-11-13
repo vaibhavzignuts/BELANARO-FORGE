@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import Navigation from './Navigation';
@@ -42,21 +43,14 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-forge-500 blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
-                <div className="relative w-12 h-12 bg-gradient-to-br from-forge-500 to-forge-700 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-heading font-bold text-xl">
-                    B
-                  </span>
-                </div>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-heading font-bold text-xl dark:text-white text-steel-900 leading-none">
-                  BELANARO FORGE
-                </div>
-                <div className="text-xs dark:text-steel-400 text-steel-600 tracking-wider">
-                  PRECISION FORGING
-                </div>
+              <div className="relative w-24 h-16 md:w-32 md:h-24">
+                <Image
+                  src="/Belanaro forge llp/logo/image.png"
+                  alt="BELANARO FORGE LLP Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
             </Link>
 

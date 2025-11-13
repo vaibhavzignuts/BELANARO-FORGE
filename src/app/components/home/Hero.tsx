@@ -1,9 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Sparkles, Zap, Shield } from 'lucide-react';
 import gsap from 'gsap';
+import { generalPlantImages } from '@/data/belanaroGalleries';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -11,6 +13,7 @@ const Hero = () => {
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
+  const heroImages = useMemo(() => generalPlantImages.slice(0, 3), []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -100,6 +103,28 @@ const Hero = () => {
           style={{ animationDelay: '2s' }}
         >
           <div className="w-12 h-12 bg-[#f97316]/10 backdrop-blur-sm rounded-lg"></div>
+        </div>
+
+        {/* Hero Imagery */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute bottom-10 right-10 flex flex-col sm:flex-row gap-4 sm:gap-6 opacity-60 hover:opacity-90 transition-opacity duration-500">
+            {heroImages.map((image, index) => (
+              <div
+                key={image.src}
+                className="relative h-32 w-48 sm:h-36 sm:w-56 rounded-2xl overflow-hidden border border-white/10 shadow-xl"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 20vw, (min-width: 640px) 35vw, 80vw"
+                  priority={index === 0}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

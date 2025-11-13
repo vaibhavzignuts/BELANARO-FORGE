@@ -32,6 +32,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
     { label: t('nav.manufacturing'), href: '/manufacturing' },
     { label: t('nav.quality'), href: '/quality' },
     { label: t('nav.workshop'), href: '/workshop' },
+    { label: t('nav.csr'), href: '/csr' },
     { label: t('nav.contact'), href: '/contact' },
   ];
 

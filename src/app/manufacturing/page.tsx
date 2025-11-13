@@ -5,6 +5,13 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Factory, Hammer, Settings, Cog, Ruler } from 'lucide-react';
+import GalleryGrid from '@/app/components/shared/GalleryGrid';
+import {
+  autoForgingImages,
+  flangesAndShaftsImages,
+  precisionForgedPartsImages,
+  rawMaterialAndStorageImages,
+} from '@/data/belanaroGalleries';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,6 +41,17 @@ export default function ManufacturingPage() {
         duration: 0.8,
         stagger: 0.12,
         ease: 'power3.out',
+      });
+
+      gsap.utils.toArray<HTMLElement>('.mf-gallery').forEach((gallery) => {
+        gsap.from(gallery.querySelectorAll('.mf-gallery-card'), {
+          scrollTrigger: { trigger: gallery, start: 'top 80%' },
+          y: 60,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.08,
+          ease: 'power3.out',
+        });
       });
 
       gsap.from('.mf-step', {
@@ -131,6 +149,74 @@ export default function ManufacturingPage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="bg-steel-950 border-y border-steel-800">
+        <div className="container mx-auto px-4 py-12 md:py-16 space-y-12">
+          <div className="mf-gallery">
+            <h2 className="mf-title text-2xl md:text-3xl font-heading font-bold text-white">
+              Forging & Ring Rolling Lines
+            </h2>
+            <p className="mt-3 text-steel-300 max-w-3xl">
+              Hydraulic presses, screw presses, and ring rolling mills shaping
+              bearing rings and automotive components.
+            </p>
+            <GalleryGrid
+              images={autoForgingImages.slice(0, 9)}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-8"
+              itemClassName="mf-gallery-card"
+            />
+          </div>
+
+          <div className="mf-gallery">
+            <h2 className="mf-title text-2xl md:text-3xl font-heading font-bold text-white">
+              Machining & Tool Room
+            </h2>
+            <p className="mt-3 text-steel-300 max-w-3xl">
+              CNC turning centers, VMCs, and lathe clusters delivering precise
+              tolerances and superior finishes.
+            </p>
+            <GalleryGrid
+              images={flangesAndShaftsImages.slice(0, 9)}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-8"
+              itemClassName="mf-gallery-card"
+            />
+          </div>
+
+          <div className="mf-gallery">
+            <h2 className="mf-title text-2xl md:text-3xl font-heading font-bold text-white">
+              Heat Treatment & Precision Cells
+            </h2>
+            <p className="mt-3 text-steel-300 max-w-3xl">
+              Controlled furnaces, quench systems, and precision machining bays
+              maintaining metallurgical integrity.
+            </p>
+            <GalleryGrid
+              images={precisionForgedPartsImages.slice(0, 9)}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-8"
+              itemClassName="mf-gallery-card"
+            />
+          </div>
+
+          <div className="mf-gallery">
+            <h2 className="mf-title text-2xl md:text-3xl font-heading font-bold text-white">
+              Material Flow & Logistics
+            </h2>
+            <p className="mt-3 text-steel-300 max-w-3xl">
+              Traceable raw material yards, die storage, and finished goods
+              staging for timely dispatch.
+            </p>
+            <GalleryGrid
+              images={rawMaterialAndStorageImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-8"
+              itemClassName="mf-gallery-card"
+            />
+          </div>
         </div>
       </section>
 

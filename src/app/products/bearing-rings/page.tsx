@@ -3,6 +3,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import GalleryGrid from '@/app/components/shared/GalleryGrid';
+import { bearingsAndRingsImages } from '@/data/belanaroGalleries';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,8 +30,6 @@ export default function BearingRingsPage() {
     return () => ctx.revert();
   }, []);
 
-  const gallery = Array.from({ length: 9 });
-
   return (
     <div className="pt-24">
       <section className="bg-steel-950 border-b border-steel-800">
@@ -52,26 +52,12 @@ export default function BearingRingsPage() {
         ref={sectionRef}
         className="container mx-auto px-4 py-12 md:py-16"
       >
-        <h2 className="br-title text-2xl md:text-3xl font-heading font-bold text-white">
-          Photo Gallery
-        </h2>
-        <p className="mt-2 text-steel-400 text-sm">
-          Place images under public/catalog/bearing-rings and swap placeholders
-          when ready.
-        </p>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {gallery.map((_, i) => (
-            <div
-              key={i}
-              className="br-card relative rounded-xl border border-dashed border-steel-700 bg-steel-950"
-            >
-              <div className="pt-[75%]" />
-              <div className="absolute inset-0 flex items-center justify-center text-steel-400 text-sm">
-                Photo {i + 1}
-              </div>
-            </div>
-          ))}
-        </div>
+        <GalleryGrid
+          images={bearingsAndRingsImages}
+          columns={{ base: 1, sm: 2, md: 2, lg: 3 }}
+          className="mt-8"
+          itemClassName="br-card"
+        />
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="br-card rounded-xl border border-steel-800 bg-steel-900 p-6 text-steel-200">
@@ -95,4 +81,3 @@ export default function BearingRingsPage() {
     </div>
   );
 }
-

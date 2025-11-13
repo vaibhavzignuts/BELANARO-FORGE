@@ -2,7 +2,22 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import type { Metadata } from 'next';
+import GalleryGrid from '@/app/components/shared/GalleryGrid';
+import {
+  cncMachinesImages,
+  dieStorageAreaImages,
+  finishGoodsStorageAreaImages,
+  generalPlantImages,
+  heatTreatmentPlantImages,
+  hydraulicPowerPressImages,
+  labImages,
+  lathAreaImages,
+  preTurnedAreaImages,
+  rawMaterialStockAreaImages,
+  ringRollingImages,
+  screwPressImages,
+  vmcMachineImages,
+} from '@/data/belanaroGalleries';
 
 // export const metadata: Metadata = {
 //   title: 'Workshop | BELANARO FORGE LLP',
@@ -11,9 +26,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // };
 
 export default function WorkshopPage() {
-  // To add photos: put images in public/catalog (e.g., /public/catalog/workshop-1.jpg)
-  // and replace the placeholders below with actual <img> or Next <Image> components referencing those paths.
-  const placeholders = Array.from({ length: 12 });
   const sectionRef = useRef<HTMLDivElement>(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -57,41 +69,167 @@ export default function WorkshopPage() {
         </div>
       </section>
 
-      {/* Photo Grid Placeholder */}
+      {/* Photo Grid */}
       <section
         ref={sectionRef}
         className="container mx-auto px-4 py-12 md:py-16"
       >
-        <h2 className="wk-title text-2xl md:text-3xl font-heading font-bold text-white">
-          Photo Gallery
-        </h2>
-        <p className="mt-2 text-steel-400 text-sm">
-          Add your photos in the reserved spaces below. Recommended size:
-          1600×1200 or higher. Place files under{' '}
-          <code className="text-steel-200">public/catalog</code> and update as
-          needed.
-        </p>
+        <div className="space-y-12">
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              CNC machines
+            </h3>
+            <GalleryGrid
+              images={cncMachinesImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {placeholders.map((_, idx) => (
-            <div
-              key={idx}
-              className="wk-card relative overflow-hidden rounded-xl border border-dashed border-steel-700 bg-steel-950"
-            >
-              {/* 4:3 aspect ratio space */}
-              <div className="pt-[75%]" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-steel-400 text-sm">
-                    Photo space #{idx + 1}
-                  </div>
-                  <div className="text-steel-500 text-xs mt-1">
-                    Add image here
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Die Storage area
+            </h3>
+            <GalleryGrid
+              images={dieStorageAreaImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Finish Goods storage area
+            </h3>
+            <GalleryGrid
+              images={finishGoodsStorageAreaImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              General plant photo
+            </h3>
+            <GalleryGrid
+              images={generalPlantImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Heat Treatment plant
+            </h3>
+            <GalleryGrid
+              images={heatTreatmentPlantImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Hydraulic Power Press
+            </h3>
+            <GalleryGrid
+              images={hydraulicPowerPressImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Lab
+            </h3>
+            <GalleryGrid
+              images={labImages}
+              columns={{ base: 1, sm: 2, md: 2, lg: 2 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              lath Area
+            </h3>
+            <GalleryGrid
+              images={lathAreaImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Pre-Turned Area
+            </h3>
+            <GalleryGrid
+              images={preTurnedAreaImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Raw material stock area
+            </h3>
+            <GalleryGrid
+              images={rawMaterialStockAreaImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Ring Rolling
+            </h3>
+            <GalleryGrid
+              images={ringRollingImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              Screw Press
+            </h3>
+            <GalleryGrid
+              images={screwPressImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
+
+          <section>
+            <h3 className="wk-title text-xl md:text-2xl font-heading font-semibold text-white">
+              VMC machine
+            </h3>
+            <GalleryGrid
+              images={vmcMachineImages}
+              columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+              className="mt-6"
+              itemClassName="wk-card"
+            />
+          </section>
         </div>
       </section>
 

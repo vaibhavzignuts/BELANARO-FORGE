@@ -1,4 +1,11 @@
 import type { Metadata } from 'next';
+import GalleryGrid from '@/app/components/shared/GalleryGrid';
+import {
+  autoForgingImages,
+  flangesAndShaftsImages,
+  generalPlantImages,
+  labAndQualityImages,
+} from '@/data/belanaroGalleries';
 
 export const metadata: Metadata = {
   title: 'About Us | BELANARO FORGE LLP',
@@ -7,6 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const plantShowcase = generalPlantImages.slice(0, 6);
+  const forgingHighlights = autoForgingImages.slice(0, 4);
+  const machiningHighlights = flangesAndShaftsImages.slice(0, 4);
+  const qualityHighlights = labAndQualityImages;
+
   return (
     <div className="pt-24">{/* offset for fixed header */}
       {/* Hero */}
@@ -21,6 +33,54 @@ export default function AboutPage() {
             Located in Rajkot, Gujarat, India, we serve Europe, the USA, the Middle East, and Asia
             with high-performance, dimensionally accurate, defect-free forged products.
           </p>
+        </div>
+      </section>
+
+      {/* Facility Showcase */}
+      <section className="container mx-auto px-4 py-12 md:py-16">
+        <h2 className="text-2xl font-heading font-bold text-white mb-6">
+          Inside Belanaro Forge LLP
+        </h2>
+        <p className="text-steel-300 max-w-3xl">
+          A quick look at our integrated forging facility — from forging bays
+          and machining cells to quality labs that keep every batch traceable.
+        </p>
+        <GalleryGrid
+          images={plantShowcase}
+          columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
+          className="mt-8"
+        />
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-1 rounded-xl border border-steel-800 bg-steel-950 p-6 text-steel-300">
+            <h3 className="text-white font-semibold mb-3">
+              Forging Highlights
+            </h3>
+            <GalleryGrid
+              images={forgingHighlights}
+              columns={{ base: 1, sm: 2, md: 2, lg: 2 }}
+              className="mt-4"
+            />
+          </div>
+          <div className="lg:col-span-1 rounded-xl border border-steel-800 bg-steel-950 p-6 text-steel-300">
+            <h3 className="text-white font-semibold mb-3">
+              Machining & Tool Room
+            </h3>
+            <GalleryGrid
+              images={machiningHighlights}
+              columns={{ base: 1, sm: 2, md: 2, lg: 2 }}
+              className="mt-4"
+            />
+          </div>
+          <div className="lg:col-span-1 rounded-xl border border-steel-800 bg-steel-950 p-6 text-steel-300">
+            <h3 className="text-white font-semibold mb-3">
+              Quality & Inspection
+            </h3>
+            <GalleryGrid
+              images={qualityHighlights}
+              columns={{ base: 1, sm: 2, md: 2, lg: 2 }}
+              className="mt-4"
+            />
+          </div>
         </div>
       </section>
 

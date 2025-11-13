@@ -11,6 +11,8 @@ import {
   Scan,
   ClipboardCheck,
 } from 'lucide-react';
+import GalleryGrid from '@/app/components/shared/GalleryGrid';
+import { labAndQualityImages } from '@/data/belanaroGalleries';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -133,6 +135,23 @@ export default function QualityPage() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* Laboratory Gallery */}
+      <section className="container mx-auto px-4 py-12 md:py-16">
+        <h2 className="ql-title text-2xl md:text-3xl font-heading font-bold text-white">
+          Lab & Inspection in Pictures
+        </h2>
+        <p className="mt-3 text-steel-300 max-w-3xl">
+          Glimpses from our spectrometer lab, hardness testing, and inspection
+          documentation workflows.
+        </p>
+        <GalleryGrid
+          images={labAndQualityImages}
+          columns={{ base: 1, sm: 2, md: 2, lg: 2 }}
+          className="mt-8"
+          itemClassName="ql-card"
+        />
       </section>
 
       {/* Inspection Equipment & Controls */}

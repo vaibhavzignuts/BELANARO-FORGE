@@ -58,19 +58,12 @@ export default function ProductsPage() {
 
   return (
     <div className="pt-24">
-      <section className="bg-steel-950 border-b border-steel-800">
-        <div className="container mx-auto px-4 py-16 md:py-20">
-          <h1 className="text-3xl md:text-5xl font-heading font-extrabold text-white leading-tight">
-            Forged Range of Excellence
-          </h1>
-          <p className="mt-4 text-steel-300 max-w-3xl">
-            Explore our product categories. Each page includes a photo gallery placeholder and key
-            specifications.
-          </p>
-        </div>
-      </section>
+      <section className="bg-steel-950 border-b border-steel-800"></section>
 
-      <section ref={sectionRef} className="container mx-auto px-4 py-12 md:py-16">
+      <section
+        ref={sectionRef}
+        className="container mx-auto px-4 py-12 md:py-16"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((p, i) => {
             const Icon = p.icon;
@@ -85,10 +78,16 @@ export default function ProductsPage() {
                   >
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">{p.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {p.title}
+                  </h3>
                   <p className="text-steel-300 text-sm mb-6">{p.desc}</p>
                   <div className="inline-flex items-center text-forge-400 font-semibold">
-                    View details <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                    View details{' '}
+                    <ArrowRight
+                      size={16}
+                      className="ml-2 group-hover:translate-x-1 transition-transform"
+                    />
                   </div>
                 </div>
               </Link>
@@ -99,6 +98,3 @@ export default function ProductsPage() {
     </div>
   );
 }
-
-
-
