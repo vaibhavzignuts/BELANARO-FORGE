@@ -38,12 +38,20 @@ export default function BearingRingsPage() {
             Bearing Rings
           </h1>
           <p className="mt-4 text-steel-300 max-w-3xl">
-            High roundness accuracy and superior surface finish. Forged,
-            heat-treated, and precision-machined in-house.
+            High roundness accuracy and superior surface finish. Each ring is
+            forged, heat-treated, and precision-machined in-house to ensure
+            exceptional durability and performance under demanding applications.
           </p>
-          <p className="mt-2 text-steel-400 text-sm">
+          <p className="mt-4 text-steel-300 max-w-3xl">
+            Our bearing rings are engineered to minimize friction and wear,
+            enhancing the reliability and lifespan of industrial machinery. With
+            rigorous quality control and advanced manufacturing techniques, we
+            meet global standards for consistency and precision.
+          </p>
+          <p className="mt-4 text-steel-400 text-sm">
             Size Range: 25 mm to 500+ mm • Materials: Carbon, Alloy, Stainless &
-            Duplex Steel
+            Duplex Steel • Applications: Automotive, Wind Energy, Heavy
+            Machinery, and Industrial Equipment
           </p>
         </div>
       </section>
