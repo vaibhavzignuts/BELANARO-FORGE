@@ -14,6 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 //     "Let's build a strong partnership. Contact BELANARO FORGE LLP for inquiries, collaboration, or partnerships.",
 // };
 
+const WHATSAPP_NUMBER = '918735030126';
+
 export default function ContactPage() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -41,6 +43,25 @@ export default function ContactPage() {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const messageLines = [
+      '*New Contact Inquiry*',
+      '',
+      `Name: ${formData.get('name') || 'N/A'}`,
+      `Company: ${formData.get('company') || 'N/A'}`,
+      `Country: ${formData.get('country') || 'N/A'}`,
+      `Email: ${formData.get('email') || 'N/A'}`,
+      `Phone: ${formData.get('phone') || 'N/A'}`,
+      '',
+      `Message: ${formData.get('message') || 'N/A'}`,
+    ];
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+      messageLines.join('\n')
+    )}`;
+
+    if (typeof window !== 'undefined') {
+      window.open(whatsappUrl, '_blank');
+    }
   };
 
   return (
@@ -127,6 +148,7 @@ export default function ContactPage() {
                     Name
                   </label>
                   <input
+                    name="name"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="Your Name"
                   />
@@ -136,6 +158,7 @@ export default function ContactPage() {
                     Company
                   </label>
                   <input
+                    name="company"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="Company Name"
                   />
@@ -145,6 +168,7 @@ export default function ContactPage() {
                     Country
                   </label>
                   <input
+                    name="country"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="Country"
                   />
@@ -155,6 +179,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="you@example.com"
                   />
@@ -164,6 +189,7 @@ export default function ContactPage() {
                     Phone
                   </label>
                   <input
+                    name="phone"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="Phone"
                   />
@@ -174,6 +200,7 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     rows={5}
+                    name="message"
                     className="w-full rounded-lg bg-steel-900 border border-steel-800 text-white px-4 py-3 outline-none focus:border-forge-500 transition-colors"
                     placeholder="Tell us about your requirements"
                   />
@@ -191,6 +218,10 @@ export default function ContactPage() {
                   Submit Inquiry
                 </button>
               </div>
+              <p className="mt-3 text-right text-xs text-steel-500">
+                Submissions open WhatsApp with a prefilled message to +91
+                {WHATSAPP_NUMBER}
+              </p>
             </form>
           </div>
         </div>

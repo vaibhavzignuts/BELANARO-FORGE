@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   Mail,
@@ -50,19 +51,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-forge-500 to-forge-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xl">
-                  B
-                </span>
+            <Link
+              href="/"
+              aria-label="BELANARO FORGE LLP home"
+              className="flex items-center gap-3 mb-6 group"
+            >
+              <div className="relative w-32 h-20 sm:w-36 sm:h-24">
+                <Image
+                  src="/Belanaro forge llp/logo/image.png"
+                  alt="BELANARO FORGE LLP logo"
+                  fill
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 640px) 128px, 144px"
+                />
               </div>
-              <div>
-                <div className="font-heading font-bold text-lg text-white">
-                  BELANARO FORGE
-                </div>
-                <div className="text-xs text-steel-400">PRECISION FORGING</div>
-              </div>
-            </div>
+            </Link>
             <p className="text-steel-400 text-sm mb-6">
               Leading manufacturer and exporter of bearing rings, auto parts,
               and precision-forged components from India.
