@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   description:
     'Leading manufacturer and exporter of bearing rings, auto parts, and precision-forged components from India. Trusted by global OEMs across Europe, USA, Middle East, and Asia.',
   keywords: [
+    'belanaroforge',
+    'belanaro forge',
+    'BELANARO FORGE LLP',
     'forging manufacturer in India',
     'bearing ring exporter',
     'auto parts forging company',
@@ -38,12 +41,11 @@ export const metadata: Metadata = {
     'custom forging manufacturer',
     'forged flanges India',
     'Rajkot forging',
-    'BELANARO FORGE LLP',
   ],
   authors: [{ name: 'BELANARO FORGE LLP' }],
   creator: 'BELANARO FORGE LLP',
   publisher: 'BELANARO FORGE LLP',
-  metadataBase: new URL('https://www.belanaro.com'),
+  metadataBase: new URL('https://www.belanaroforge.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     title: 'BELANARO FORGE LLP - Precision Forging. Global Strength.',
     description:
       'Delivering high-performance bearing rings, auto parts, and precision-forged components from India to the world.',
-    url: 'https://www.belanaro.com',
+    url: 'https://www.belanaroforge.com',
     siteName: 'BELANARO FORGE LLP',
     images: [
       {
