@@ -7,6 +7,15 @@ import WhatsAppFloat from './components/shared/WhatsAppFloat';
 import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
 import Header from './components/layout/Header';
 import { ThemeProvider } from '@/lib/theme/ThemeProvider';
+import {
+  CONTACT_ADDRESS,
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+  SOCIAL_PROFILES,
+} from '@/lib/seo/config';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,6 +34,42 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-jetbrains',
   display: 'swap',
 });
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: DEFAULT_OG_IMAGE,
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: CONTACT_PHONE,
+      contactType: 'sales',
+      email: CONTACT_EMAIL,
+      areaServed: ['IN', 'US', 'EU', 'AS'],
+      availableLanguage: ['en'],
+    },
+  ],
+  sameAs: SOCIAL_PROFILES,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: CONTACT_ADDRESS,
+    addressCountry: 'IN',
+  },
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_URL}/search?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
 
 export const metadata: Metadata = {
   title: 'BELANARO FORGE LLP - Precision Forging. Global Strength.',
@@ -108,6 +153,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#f97316" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
       </head>
       <body className="antialiased">
         <ThemeProvider>

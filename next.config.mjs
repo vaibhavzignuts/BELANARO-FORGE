@@ -31,6 +31,16 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'gsap'],
   },
+  // Redirects for SEO - ensure www version is used
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
   // Security headers
   async headers() {
     return [
