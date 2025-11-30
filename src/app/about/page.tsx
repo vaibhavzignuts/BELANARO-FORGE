@@ -11,6 +11,16 @@ export const metadata: Metadata = {
   title: 'About Us | BELANARO FORGE LLP',
   description:
     'BELANARO FORGE LLP – manufacturer and exporter of forged bearing rings, automotive components, flanges, and precision-engineered forging parts from Rajkot, India.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About Us | BELANARO FORGE LLP',
+    description:
+      'BELANARO FORGE LLP – manufacturer and exporter of forged bearing rings, automotive components, flanges, and precision-engineered forging parts from Rajkot, India.',
+    url: 'https://www.belanaroforge.com/about',
+    type: 'website',
+  },
 };
 
 export default function AboutPage() {
