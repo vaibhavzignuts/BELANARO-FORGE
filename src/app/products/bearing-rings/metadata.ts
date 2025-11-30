@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { SITE_URL } from '@/lib/seo/config';
 
+
+//add comment for testing deployment
 export const metadata: Metadata = {
   title: 'Bearing Rings | Inner & Outer Rings | BELANARO FORGE LLP',
   description:
