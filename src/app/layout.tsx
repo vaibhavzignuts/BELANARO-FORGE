@@ -64,11 +64,7 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   name: SITE_NAME,
   url: SITE_URL,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_URL}/search?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
+  // Removed SearchAction as there's no search page - this was causing 404 errors for crawlers
 };
 
 export const metadata: Metadata = {

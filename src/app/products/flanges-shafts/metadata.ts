@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/products/flanges-shafts',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
     title: 'Flanges & Shafts | BELANARO FORGE LLP',
     description:

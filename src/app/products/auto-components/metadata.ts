@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/products/auto-components',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
     title: 'Automotive Components | BELANARO FORGE LLP',
     description:
