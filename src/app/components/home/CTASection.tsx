@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Download, Mail, Phone } from 'lucide-react';
+import { CONTACT_EMAIL } from '@/lib/seo/config';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -131,7 +132,7 @@ const CTASection = () => {
                   </a>
 
                   <a
-                    href="mailto:jayom@belanaro.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="group flex items-center gap-3 text-steel-300 hover:text-forge-400 transition-colors"
                   >
                     <div className="w-12 h-12 bg-steel-800 rounded-full flex items-center justify-center group-hover:bg-forge-500 transition-colors">
@@ -139,7 +140,7 @@ const CTASection = () => {
                     </div>
                     <div className="text-left">
                       <div className="text-sm text-steel-500">Email us</div>
-                      <div className="font-semibold">jayom@belanaro.com</div>
+                      <div className="font-semibold">{CONTACT_EMAIL}</div>
                     </div>
                   </a>
                 </div>

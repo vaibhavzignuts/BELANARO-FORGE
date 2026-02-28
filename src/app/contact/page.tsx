@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { CONTACT_EMAIL } from '@/lib/seo/config';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,10 +113,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-white font-semibold">Email</div>
                   <a
-                    href="mailto:jayom@belanaro.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="text-steel-300 hover:text-forge-400 transition-colors"
                   >
-                    jayom@belanaro.com
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </div>

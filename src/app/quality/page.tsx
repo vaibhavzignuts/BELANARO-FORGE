@@ -1,6 +1,5 @@
 'use client';
 
-// import type { Metadata } from 'next';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -15,12 +14,6 @@ import GalleryGrid from '@/app/components/shared/GalleryGrid';
 import { labAndQualityImages } from '@/data/belanaroGalleries';
 
 gsap.registerPlugin(ScrollTrigger);
-
-// export const metadata: Metadata = {
-//   title: 'Quality | BELANARO FORGE LLP',
-//   description:
-//     'Zero-defect manufacturing philosophy at BELANARO FORGE LLP with material testing, dimensional inspections, hardness and metallurgical checks, and traceable batch reports.',
-// };
 
 export default function QualityPage() {
   const sectionRef = useRef<HTMLDivElement>(null);

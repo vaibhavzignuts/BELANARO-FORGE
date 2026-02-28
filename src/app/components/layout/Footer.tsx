@@ -12,6 +12,7 @@ import {
   Instagram,
   ArrowRight,
 } from 'lucide-react';
+import { CONTACT_EMAIL } from '@/lib/seo/config';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,6 +21,7 @@ const Footer = () => {
     quickLinks: [
       { label: 'Home', href: '/' },
       { label: 'About Us', href: '/about' },
+      { label: 'Company Profile', href: '/company-profile' },
       { label: 'Products', href: '/products' },
       { label: 'Manufacturing', href: '/manufacturing' },
     ],
@@ -83,14 +85,14 @@ const Footer = () => {
                 <span className="text-sm">+91 8735030126</span>
               </a>
               <a
-                href="mailto:jayom@belanaro.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="flex items-center gap-3 text-steel-400 hover:text-forge-400 transition-colors group"
               >
                 <Mail
                   size={18}
                   className="group-hover:scale-110 transition-transform"
                 />
-                <span className="text-sm">jayom@belanaro.com</span>
+                <span className="text-sm">{CONTACT_EMAIL}</span>
               </a>
               <div className="flex items-start gap-3 text-steel-400">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />

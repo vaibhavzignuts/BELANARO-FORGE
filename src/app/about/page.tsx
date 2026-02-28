@@ -6,6 +6,7 @@ import {
   generalPlantImages,
   labAndQualityImages,
 } from '@/data/belanaroGalleries';
+import { CONTACT_EMAIL } from '@/lib/seo/config';
 
 export const metadata: Metadata = {
   title: 'About Us | BELANARO FORGE LLP',
@@ -374,7 +375,7 @@ export default function AboutPage() {
                 BELANARO FORGE LLP • Padavala, Veraval-Shapar, Rajkot, Gujarat, India
               </p>
               <p className="mt-1 text-steel-300">Phone: +91 8735030126</p>
-              <p className="mt-1 text-steel-300">Email: jayom@belanaro.com</p>
+              <p className="mt-1 text-steel-300">Email: {CONTACT_EMAIL}</p>
               <p className="mt-1 text-steel-300">Web: www.belanaro.com</p>
             </div>
           </div>

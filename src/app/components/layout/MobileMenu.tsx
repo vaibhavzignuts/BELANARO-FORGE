@@ -19,6 +19,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   const navItems = [
     { label: t('nav.home'), href: '/' },
     { label: t('nav.about'), href: '/about' },
+    { label: t('nav.companyProfile'), href: '/company-profile' },
     {
       label: t('nav.products'),
       href: '/products',
